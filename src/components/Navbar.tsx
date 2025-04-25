@@ -7,12 +7,12 @@ interface NavbarProps {
 
 const Navbar = ({ className }: NavbarProps) => {
   return (
-    <nav className={cn(" flex items-center justify-between py-4  bg-gradient-to-br from-[#FFF6F1] via-[#FFF9F4] to-white", className)}>
+    <nav className={cn(" flex items-center justify-between py-4  bg-gradient-to-br from-[#FFF6F1] via-[#FFF9F4] ", className)}>
       <Link to="/" className="font-bold text-2xl flex items-center text-orange-500">
         HACOO
       </Link>
       
-      <div className="hidden lg:flex items-center space-x-10 ">
+      <div className="hidden lg:flex items-center space-x-10  ">
         <Link to="#" className="text-gray-600 hover:text-[#1A1A1A] transition-colors text-base">Property</Link>
         <Link to="#" className="text-gray-600 hover:text-[#1A1A1A] transition-colors text-base">About Hacoo</Link>
         <Link to="#" className="text-gray-600 hover:text-[#1A1A1A] transition-colors text-base">Shopping & Delivery</Link>
